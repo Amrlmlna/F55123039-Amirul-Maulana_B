@@ -1,0 +1,293 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Geist+Mono:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+h3 {
+  line-height: 55px;
+  margin-bottom: 20px;
+}
+
+a {
+  color: white;
+}
+
+.header {
+  display: flex;
+  text-align: center;
+  color: white;
+  padding: 0px;
+  flex-direction: column;
+  font-family: "poppins";
+}
+
+@media screen and (max-width: 768px) {
+  .header {
+    align-items: flex-start;
+  }
+  .nav-links {
+    align-items: flex-end;
+  }
+}
+
+.logo {
+  padding-left: 20px;
+  font-size: 30px;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: bold;
+  z-index: 20;
+}
+
+.navbar {
+  position: fixed;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.2); /* 50% white opacity */
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  z-index: 10;
+  padding-left: 20px;
+  width: 100%;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: end;
+  font-size: 18px;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  padding-right: 60px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #ff6347;
+}
+
+.hero {
+  position: relative;
+  background-image: url(src/pic.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  padding-top: 60px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero h1 {
+  display: block;
+  margin: 0;
+  z-index: 2;
+  color: white;
+  font-size: 40px;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.hero p {
+  display: block;
+  margin: 0;
+  z-index: 2;
+  color: white;
+  font-family: "Geist Mono", monospace;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.about {
+  position: relative;
+  height: 100vh;
+  background-image: url(src/bg1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0;
+}
+
+.about .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.about .content {
+  padding-left: 20px;
+  justify-content: center;
+  z-index: 2;
+}
+
+.about h2,
+h3,
+p {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.about h2 {
+  font-size: 30px;
+  color: #00bcd4;
+}
+
+.about h3 {
+  color: white;
+  font-size: 60px;
+}
+
+.about p {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: justify;
+  color: #ccc;
+  background-color: rgb(36, 43, 98, 0.5);
+  border-radius: 15px;
+  width: 75vh;
+  padding: 14px;
+}
+
+img {
+  border-radius: 20px;
+  justify-content: center;
+  width: 500px;
+  z-index: 2;
+}
+
+.project {
+  position: relative;
+  height: 100vh;
+  background-image: url(src/bg1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin: 0;
+}
+
+.project .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.project-container {
+  padding-left: 20px;
+  justify-content: center;
+}
+
+.project-1 {
+  z-index: 2;
+  align-items: center;
+}
+
+.project h2,
+h3,
+p {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+.project h2 {
+  font-size: 30px;
+  color: #00bcd4;
+}
+
+.project h3 {
+  color: white;
+  font-size: 40px;
+}
+
+.project p {
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: justify;
+  color: #ccc;
+  background-color: rgb(36, 43, 98, 0.5);
+  border-radius: 15px;
+  width: 60vh;
+  padding: 14px;
+}
+
+.project img {
+  border-radius: 20px;
+  justify-content: center;
+  width: 580px;
+  z-index: 2;
+}
+
+.contact {
+  height: 10vh;
+  background-color: #26252c;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.contact h2,
+p {
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.contact-content {
+  opacity: 50%;
+}
+
+.footer p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(150, 149, 164);
+}
